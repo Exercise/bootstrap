@@ -198,7 +198,7 @@
 #fluidGridSystem {
   // Setup the mixins to be used
   .columns(@fluidGridGutterWidth, @fluidGridColumnWidth, @columns) {
-    width: 1% * (@fluidGridColumnWidth * @columns) + (@fluidGridGutterWidth * (@columns - 1));
+    width: (@fluidGridColumnWidth * @columns) + (@fluidGridGutterWidth * (@columns - 1));
   } 
   .gridColumn(@fluidGridGutterWidth) {
     float: left;
